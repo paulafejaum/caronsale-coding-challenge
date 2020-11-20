@@ -1,21 +1,35 @@
 {
-  "name": "caronsale-coding-challenge-backend",
-  "version": "1.0.0",
-  "description": "CarOnSale Backend Coding Challenge",
-  "main": "index.js",
-  "scripts": {
-    "start": "./node_modules/.bin/ts-node src/app/main.ts",
-    "test": "./node_modules/.bin/mocha --compilers ts:ts-node/register ./src/**/*.spec.ts"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@types/inversify": "^2.0.33",
-    "@types/node": "^12.0.0",
-    "inversify": "^4.13.0",
-    "mocha": "^5.2.0",
-    "reflect-metadata": "^0.1.13",
-    "ts-node": "^8.1.0",
-    "typescript": "^3.4.5"
-  }
+    "name": "caronsale-coding-challenge-backend",
+    "version": "1.0.0",
+    "description": "CarOnSale Backend Coding Challenge",
+    "main": "index.js",
+    "config": {
+        "user": "salesman@random.com",
+        "password": "123test"
+    },
+    "scripts": {
+        "start": "./node_modules/.bin/ts-node src/app/main.ts",
+        "test": "./node_modules/.bin/mocha --compilers ts:ts-node/register ./src/**/*.spec.ts",
+        "lint": "tslint --project . "
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@types/inversify": "^2.0.33",
+        "@types/node": "^12.0.0",
+        "axios": "^0.21.0",
+        "g": "^2.0.1",
+        "inversify": "^4.13.0",
+        "reflect-metadata": "^0.1.13",
+        "ts-node": "^8.1.0",
+        "typescript": "^3.9.7"
+    },
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "mocha": "^5.2.0",
+        "moxios": "^0.4.0",
+        "sinon": "^9.2.1",
+        "ts-sinon": "^2.0.1",
+        "tslint": "^6.1.3"
+    }
 }
